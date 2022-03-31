@@ -1,0 +1,207 @@
+@media only screen and (max-width: 800px) {
+
+    /* header */
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .menu_hamburguesa {
+        display: block;
+        grid-column: 11 / 12;
+        font-size: 2em;
+    }
+
+    .navbar .menu {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: #1e1e20ff;
+        margin-top: 40em;
+        transform: translateX(170%);
+        transition: all 1s;
+    }
+
+    .navbar .menu_toggle {
+        transform: translateX(50%);
+        z-index: 1;
+    }
+
+
+    /* main index */
+    .artist {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        align-items: center;
+    }
+
+    .artist img {
+        width: 25rem;
+        grid-column: 5 / 9;
+        grid-row: 1 / 2;
+        margin: 90px 20px 10px 20px;
+    }
+
+    .artist__content {
+        grid-column: 5 / 9;
+        grid-row: 2 / 3;
+        justify-self: center;
+        margin: 10px 20px 120px 20px;
+    }
+
+    .artist__content h1 {
+        font-size: 4.5em;
+    }
+
+    .artist__content .btn {
+        align-self: flex-end;
+    }
+
+
+    /* footer */
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        align-items: center;
+        height: 470px;
+    }
+
+    .socialBar {
+        grid-column: 1 / 11;
+        grid-row: 1 / 2;
+    }
+
+    .mapa {
+        grid-column: 1 / 8;
+        grid-row: 2 / 3;
+        margin-left: 2rem;
+        justify-self: start;
+        min-width: 15rem
+    }
+
+    .btnHaciaArriba {
+        grid-column: 11 / 12;
+        grid-row: 1 / 2;
+    }
+
+    .copyright {
+        grid-column: 1 / 13;
+        grid-row: 3 / 4;
+        align-self: flex-end;
+    }
+
+
+    /* main tour */
+    .tour__titulo {
+        font-size: 3rem;
+        margin: 50px 10px 20px 15px;
+    }
+
+    .tour__nav ul li a {
+        font-size: 1.4rem;
+        padding: 2px;
+   }
+
+   .tour__textoInterior {
+        font-size: 3.2rem;
+   }
+
+   .parallax{
+	    height:25rem;
+   }
+
+
+   /* main bio */
+   .biografia__titulo {
+    font-size: 3rem;
+   }
+
+   .biografia__content img {
+       grid-column: 5 / 9;
+       width: 20rem;
+       margin: 20px 15px;
+   }
+
+   .biografia__content p {
+       grid-column: 3 / 11;
+       font-size: 1.1em;
+       letter-spacing: 2.2px;
+   }
+
+
+   /* main music&video */
+   .musicAndVideo {
+       height: 1490px;
+   }
+   .musicAndVideo__titulo {
+    font-size: 3rem;
+   }
+
+   .musicAndVideo__grids {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+   }
+
+   .musicAndVideo__img {
+    grid-column: 1 / 12;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+   }
+
+   .musicAndVideo__spotify {
+    grid-row: 2 / 3;
+    grid-column: 4 / 9;
+   }
+
+   .musicAndVideo__youtube {
+    grid-row: 3 / 4;
+    grid-column: 3 / 10;
+    align-self: flex-start;
+   }
+   
+   #img--uno {
+    grid-column: 5 / 6;
+    margin: 15px;
+   }  
+
+   #img--dos {
+    grid-column: 7 / 8;
+    margin: 15px;
+    
+   }
+
+   #img--tres {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+    margin: 15px;
+   }
+   
+   #img--cuatro {
+    grid-column: 7 / 8;
+    grid-row: 2 / 3;
+    margin: 15px;
+   }
+
+
+
+      /* main contact */
+   .btn {
+    padding: 4px 24px;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+   }
+
+}
+
