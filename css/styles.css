@@ -40,13 +40,12 @@ body {
     text-decoration: none;
     color: #f0f0f0;
     font-size: 1.2rem;
-    transition: color 0.4s;
+    transition: color 0.6s;
     padding: 5px;
 }
 
 .navbar .menu li a:hover {
-    margin-top: 0,2em;
-    color: #d34e5c
+    color: #d34e5c;
 }
 
 .navbar .menu_hamburguesa {
@@ -71,7 +70,7 @@ body {
 }
 
 .artist img {
-    width: 30rem;
+    width: 28rem;
     opacity: 96%;
     grid-column: 3 / 5;
     grid-row: 1 / 4; 
@@ -79,7 +78,7 @@ body {
 }
 
 .artist__content {
-    grid-column: 6 / 11;
+    grid-column: 5 / 11;
     grid-row: 1 / 4;
     color: #f0f0f0;
     background-color: #302e2eaf;
@@ -110,11 +109,33 @@ body {
     text-align: center;
 }
 
+.typing-demo {
+    width: 53ch;
+    animation: typing 2.5s steps(20), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    font-family: monospace;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
+
 .artist__content .btn {
     padding: 10px 20px;
     background-color: #1e1e20ff;
     border-radius: 30px;
     margin: 10px;
+    transition: all .4s ease-in-out;;
 }
 
 .artist__content .btn a {
@@ -126,7 +147,8 @@ body {
 .artist__content .btn:hover {
     background-color: #d34e5c;
     color: #1e1e20ff;
-    font-weight: bold;
+    transform:scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 
@@ -152,6 +174,12 @@ body {
 .fa-brands {
     font-size: 2em;
     letter-spacing: 15px;
+    transition: all .4s ease-in-out;
+}
+
+.fa-brands:hover {
+    transform:scale(0.90);
+    -webkit-transform: scale(0.90); 
 }
 
 .mapa__responsive {
@@ -180,6 +208,11 @@ body {
 
 .fa-circle-arrow-up {
     font-size: 3em;
+}
+
+.fa-circle-arrow-up:hover {
+    transform:scale(0.95);
+    -webkit-transform: scale(0.95);
 }
 
 .copyright {
@@ -220,6 +253,14 @@ body {
     margin: 25px 8px 90px 0px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.966);
     border-radius: 5px;
+    transition:all .8s ease-in-out;
+}
+
+.biografia__content img:hover {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
 }
 
 .biografia__content p {
@@ -281,6 +322,13 @@ body {
 .musicAndVideo__img img {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.966);
     border-radius: 10px;
+    width: 200px;
+    transition: all .4s ease-in-out;;
+}
+
+.musicAndVideo__img img:hover {
+    transform:scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 #img--uno {
@@ -450,9 +498,16 @@ body {
     font-family: 'Poiret One', cursive;
     font-size: 4rem;
 }
-	
+
+.tour__content div {
+    transition: all .5s ease-in-out;
+}
+
+.tour__content .parallax:hover {
+    filter: opacity(0.77); 
+}
 .img-uno {
-    background-image: url(../img/europe.jpg)
+    background-image: url(../img/europe.jpg);
 }
 
 .img-dos {
@@ -550,3 +605,5 @@ input[type=checkbox] {
 .btn:hover {
     background-color: #4c4955da;
 }
+
+
