@@ -6,23 +6,31 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
+/*
+:root {
+    --soundcloud: #ff7700 ;
+    --spotify: #81b71a ;
+    --youtube: #c4302b;
+    --instagram: #dd2a7b;
+    --facebook: #3b5999;
+}*/
+
 
 
 
 /* ******************CSS header****************** */
 
 .logo {
-    width: 60px;
-    margin: 20px;
+    height: 120px;
 }
 
 .navbar {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.966);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 .nav-link {
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
 }
 
@@ -57,7 +65,7 @@ body {
 .artist__content {
     color: #f0f0f0;
     background-color: #302e2eaf;
-    box-shadow: 0px 5px 15px #0c0c0c;
+    box-shadow: 0px 5px 10px #0c0c0c;
     justify-items: center;
     min-width: fit-content;
     padding: 15px;
@@ -65,31 +73,9 @@ body {
     font-size: large;
 }
 
-.typing-demo {
-    width: 45ch;
-    animation: typing 2.5s steps(20), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 1px solid;
-    font-family: monospace;
-}
-
-@keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-@keyframes blink {
-    50% {
-      border-color: transparent
-    }
-}
-
 .artist__content .btn a {
     text-decoration: none;
     color: #f0f0f0;
-    font-size: 1.2em;
 }
 
 .artist__content h3 {
@@ -105,7 +91,6 @@ body {
 
 .artist__content p {
     font-family: 'Noto Serif Display', serif;
-    font-size:1.3em;
     text-align: center;
 }
 
@@ -115,19 +100,31 @@ body {
 /* ******************CSS footer****************** */
 
 .footer {
-    background-color: #1e1e20ff;
     color: #f0f0f0;
     font-size: 1.1em;
     padding: 20px;
     width: 100%;
     bottom: 0;
-
 }
 
 .bi {
     font-size: 2em;
+    margin: 0 5px;
+}
+
+.bi-arrow-up-circle {
+    float: right;
+}
+
+.fa-brands {
+    font-size: 2em;
     letter-spacing: 15px;
     transition: all .4s ease-in-out;
+}
+
+.fa-brands:hover {
+    transform:scale(0.90);
+    -webkit-transform: scale(0.85); 
 }
 
 .mapa__responsive iframe {
@@ -135,9 +132,6 @@ body {
     height: auto;
 }
 
-.bi-arrow-up-circle {
-    float: right;
-}
 
 
 
@@ -146,7 +140,7 @@ body {
 
 .musicAndVideo__titulo {
     font-family: 'Oswald', sans-serif;
-    font-size: 3.7rem;
+    font-size: 3.5rem;
     margin: 60px 10px 15px 10px;
     justify-content: center;
     align-items: center;
@@ -167,17 +161,19 @@ body {
 }
 
 .carousel {
-    margin: 60px;
+    margin: 30px;
 }
 
-
+.notCarousel {
+    margin: 15px;
+}
 
 
 /* ******************CSS main tour****************** */
 
 .tour__title {
     font-family: 'Oswald', sans-serif;
-    font-size: 3.7rem;
+    font-size: 3.5rem;
     margin: 70px 10px 20px 15px;
     justify-content: center;
     align-items: center;
@@ -262,7 +258,7 @@ body {
 .biografia__titulo {
     color: #f0f0f0;
     text-align: center;
-    font-size: 3.7rem;
+    font-size: 3.5rem;
 }
 
 .container p {
@@ -310,7 +306,7 @@ body {
     align-items: center;
     display: flex;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin: 0px 10px;
     color: #1f1e22;
 }
