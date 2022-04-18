@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&family=Noto+Serif+Display:ital,wght@0,200;1,800&family=Poiret+One&display=swap");
+body {
+  font-family: "Manrope", sans-serif; }
+
+/* ****************** HEADER ****************** */
+.navbar {
+  font-size: 1.3em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.966); }
+  .navbar .logo {
+    height: 6em; }
+  .navbar .nav-link {
+    margin: 10px;
+    padding: 10px; }
+
+/* ****************** MAIN INDEX ****************** */
+.artist {
+  min-height: auto; }
+  .artist video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    z-index: -1; }
+  .artist .artist__presentation {
+    margin: 50px;
+    justify-items: center;
+    align-items: center; }
+    .artist .artist__presentation img {
+      max-width: 100%;
+      height: auto;
+      opacity: 96%; }
+  .artist .artist__content {
+    color: #f0f0f0;
+    background-color: #302e2eaf;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.966);
+    justify-items: center;
+    min-width: fit-content;
+    padding: 15px;
+    display: grid;
+    font-size: large; }
+  .artist h1 {
+    font-size: 3em; }
+  .artist h3 {
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    text-align: center;
+    align-self: center; }
+  .artist p {
+    font-family: 'Noto Serif Display', serif;
+    text-align: center; }
+  .artist a {
+    color: #f0f0f0;
+    text-decoration: none; }
+
+/* ****************** FOOTER ****************** */
+footer {
+  color: #f0f0f0;
+  font-size: 1.1em;
+  padding: 20px;
+  width: 100%;
+  bottom: 0; }
+  footer .bi {
+    font-size: 2.2em;
+    margin: 0 5px; }
+  footer .bi-arrow-up-circle {
+    float: right; }
+  footer .fa-brands {
+    font-size: 2em;
+    letter-spacing: 15px;
+    transition: all .4s ease-in-out; }
+    footer .fa-brands:hover {
+      transform: scale(0.9);
+      -webkit-transform: scale(0.9); }
+  footer iframe {
+    width: 100%;
+    height: auto; }
+
+/* *************** MAIN MUSIC&VIDEO *************** */
+.musicAndVideo {
+  background-image: url(../img/fondo.jpg);
+  width: 100%;
+  background-position: center top;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; }
+  .musicAndVideo h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3.5rem;
+    margin: 60px 10px 20px 10px;
+    color: #f0f0f0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.966);
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+  .musicAndVideo .carousel {
+    margin: 30px; }
+  .musicAndVideo .notCarousel {
+    margin: 15px; }
+
+/* ****************** MAIN TOUR ****************** */
+main {
+  /* editar*/ }
+  main h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3.5rem;
+    margin: 60px 10px 20px 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+  main a {
+    color: #33313b;
+    font-size: 1.4rem;
+    padding: 5px; }
+  main .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    max-width: 100%;
+    position: relative; }
+  main .parallax-caption {
+    color: #e7e7e7;
+    font-weight: 900;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 80%;
+    font-family: 'Poiret One', cursive;
+    font-size: 4rem; }
+  main .tour__content div {
+    transition: all .5s ease-in-out; }
+  main .tour__content .parallax:hover {
+    filter: opacity(0.77); }
+  main .img-one {
+    background-image: url(../img/europe.jpg); }
+  main .img-two {
+    background-image: url(../img/asia.jpg); }
+  main .img-three {
+    background-image: url(../img/oceania.jpg); }
+  main .img-four {
+    background-image: url(../img/northamerica.jpg); }
+  main .img-five {
+    background-image: url(../img/southamerica.jpg); }
+  main .container table {
+    margin: 50px 0px 100px 0px; }
+
+/* ****************** MAIN BIO ****************** */
+.biografia {
+  background-image: url(../img/blackandred.jpg);
+  width: 100%;
+  background-position: center top;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; }
+
+.biografia__titulo {
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 3.5rem; }
+
+.container p {
+  color: #f0f0f0;
+  font-size: 1em;
+  letter-spacing: 2px;
+  padding: 1.1rem;
+  padding: 20px;
+  align-self: center; }
+
+.container img {
+  padding: 25px; }
+
+/* ******************CSS main merch****************** */
+.construction {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: auto; }
+
+/* ********************CSS main contact******************** */
+.contact {
+  background-image: url(../img/contactus.jpg);
+  width: 100%;
+  height: auto;
+  background-position: center top;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; }
+
+.contact__title {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.7rem;
+  margin: 0px 10px;
+  color: #1f1e22; }
+
+.container form {
+  margin: 5px 10px 70px 10px; }
+
+.container label {
+  font-size: 1.5rem;
+  color: #1f1e22; }
+
+.contact-buttons {
+  display: flex;
+  justify-content: center; }
+
+.contact-buttons .btn {
+  margin: 10px 25px; }
+
+@media (min-width: 250px) and (max-width: 575px) {
+  /* ***** header ***** */
+  .navbar {
+    font-size: medium; }
+  .nav-link {
+    margin: 5px 0px 5px 25px;
+    padding: 10px; }
+  /* ***** main index ***** */
+  .artist__presentation img {
+    margin-bottom: 15px; }
+  .artist__content {
+    font-size: medium; }
+  /* ***** footer ***** */
+  .footer {
+    font-size: 0.8em; }
+  .fa-brands {
+    margin-bottom: 35px; }
+  .mapa__responsive iframe {
+    width: 70%;
+    height: auto;
+    margin-bottom: 25px; }
+  .socialBar h5 {
+    font-size: medium;
+    margin-top: -60px; }
+  .mapa h5 {
+    font-size: medium; }
+  .copyright h6 {
+    font-size: small; }
+  .bi-arrow-up-circle {
+    padding: 15px;
+    margin: 5px; }
+  /* ***** main music&video ***** */
+  .musicAndVideo__titulo {
+    font-size: large; }
+  .carousel {
+    margin: 10px; }
+  .container .notCarousel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; }
+  .notCarousel {
+    margin: 30px; }
+  .musicAndVideo__spotify {
+    width: 70%; }
+  .musicAndVideo__spotify iframe {
+    margin-bottom: 30px; }
+  /* ***** main tour ***** */
+  .tour__title {
+    font-size: xx-large; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* ***** header ***** */
+  .navbar {
+    font-size: large; }
+  /* ***** main index ***** */
+  .artist__presentation img {
+    margin-bottom: 15px; }
+  /* ***** footer ***** */
+  .footer {
+    font-size: 0.9em; }
+  .fa-brands {
+    margin-bottom: 30px; }
+  .mapa__responsive iframe {
+    width: 80%;
+    height: auto;
+    margin-bottom: 25px; }
+  .socialBar h5 {
+    font-size: medium;
+    margin-top: -60px; }
+  .mapa h5 {
+    font-size: medium; }
+  .copyright h6 {
+    font-size: small; }
+  .bi-arrow-up-circle {
+    padding: 10px;
+    margin: 5px; }
+  /* ***** main music&video ***** */
+  .musicAndVideo__titulo {
+    font-size: xx-large; }
+  .carousel {
+    margin: 10px; }
+  .container .notCarousel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; }
+  .notCarousel {
+    margin: 30px; }
+  .musicAndVideo__spotify {
+    width: 50%; }
+  .musicAndVideo__spotify iframe {
+    margin-bottom: 30px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* ***** header ***** */
+  .navbar {
+    font-size: larger; }
+  /* ***** footer ***** */
+  .footer {
+    font-size: 1em; }
+  .mapa__responsive iframe {
+    width: 90%;
+    margin-bottom: 15px; }
+  .socialBar h5 {
+    font-size: large;
+    margin-top: -70px; }
+  .mapa h5 {
+    font-size: large;
+    margin-top: -70px; }
+  .copyright h6 {
+    font-size: medium; }
+  .bi-arrow-up-circle {
+    padding: 20px;
+    margin: 5px; }
+  /* ***** main music&video ***** */
+  .carousel {
+    margin: 20px; }
+  /* ***** main music&video ***** */
+  .musicAndVideo__spotify iframe {
+    margin-bottom: 30px; } }

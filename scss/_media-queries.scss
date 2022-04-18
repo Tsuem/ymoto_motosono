@@ -1,11 +1,6 @@
-
 @media (min-width: 250px) and (max-width: 575px) {
 
     /* ***** header ***** */
-    .logo {
-        height: 110px;
-    }
-
     .navbar {
         font-size: medium;
     }
@@ -17,9 +12,14 @@
 
 
     /* ***** main index ***** */
+    .artist__presentation img {
+        margin-bottom: 15px;
+    }
+
     .artist__content {
         font-size: medium;
     }
+
 
 
     /* ***** footer ***** */
@@ -58,7 +58,7 @@
 
     /* ***** main music&video ***** */
     .musicAndVideo__titulo {
-        font-size: xx-large;
+        font-size: large;
     }
 
     .carousel {
@@ -99,6 +99,12 @@
         font-size: large;
     }
 
+
+    /* ***** main index ***** */
+    .artist__presentation img {
+        margin-bottom: 15px;
+    }
+        
 
     /* ***** footer ***** */
     .footer {
@@ -154,7 +160,7 @@
     }
 
     .musicAndVideo__spotify {
-        width: 40%;
+        width: 50%;
     }
 
     .musicAndVideo__spotify iframe {

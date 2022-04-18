@@ -1,0 +1,298 @@
+body {
+    font-family: $body-font;
+}
+
+/* ****************** HEADER ****************** */
+.navbar {
+    font-size: $navbar-fontsize;
+    box-shadow: $box-shadow;
+
+    .logo {
+        height: $logo-height;
+    }
+
+    .nav-link {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+/* ****************** MAIN INDEX ****************** */
+.artist {
+    min-height: auto;
+
+    video {
+        position: fixed;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        z-index: -1;
+    }
+
+    .artist__presentation {
+        margin: 50px;
+        justify-items: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            opacity: 96%; 
+        }
+    }
+
+    .artist__content {
+        color: $white-letter;
+        background-color: #302e2eaf;
+        box-shadow: $box-shadow;
+        justify-items: center;
+        min-width: fit-content;
+        padding: 15px;
+        display: grid;
+        font-size: large;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-family: 'Poiret One', cursive;
+        font-size: 2em;
+        text-align: center;
+        align-self: center;
+    }
+
+    p {
+        font-family: 'Noto Serif Display', serif;
+        text-align: center;
+    }
+
+    a {
+        color: $white-letter;
+        text-decoration: none;
+    }
+}
+
+/* ****************** FOOTER ****************** */
+footer {
+    color: $white-letter;
+    font-size: $footer-fontsize;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+
+    .bi {
+        font-size: 2.2em;
+        margin: 0 5px;
+    }
+
+    .bi-arrow-up-circle {
+        float: right;
+    }
+
+    .fa-brands {
+        font-size: $socialbar-size;
+        letter-spacing: 15px;
+        transition: all .4s ease-in-out;
+
+        &:hover{
+            transform:scale(0.90);
+            -webkit-transform: scale(0.90); 
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* *************** MAIN MUSIC&VIDEO *************** */
+.musicAndVideo {
+    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    background-position: center top;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    h1 {
+        font-family: $title-font;
+        font-size: $title-fontsize;
+        margin: $title-margin;
+        color: $white-letter;
+        box-shadow: $box-shadow;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .carousel {
+        margin: 30px;
+    }
+
+    .notCarousel {
+        margin: 15px;
+    }
+}
+
+/* ****************** MAIN TOUR ****************** */
+main {
+    h1 {
+        font-family: $title-font;
+        font-size: $title-fontsize;
+        margin: $title-margin;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    a {
+        color: #33313b;
+        font-size: 1.4rem;
+        padding: 5px;
+    }
+
+
+
+ /* editar*/
+    .parallax{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        height:30rem;
+        max-width: 100%;
+        position: relative
+    }
+    
+    .parallax-caption {
+        color:rgb(231, 231, 231);
+        font-weight: 900;
+        left: 10%;
+        position: absolute;
+        text-align: center;
+        top:40%;
+        width: 80%;
+        font-family: 'Poiret One', cursive;
+        font-size: 4rem;
+    }
+    
+    .tour__content div {
+        transition: all .5s ease-in-out;
+    }
+    
+    .tour__content .parallax:hover {
+        filter: opacity(0.77); 
+    }
+    .img-one {
+        background-image: url(../img/europe.jpg);
+    }
+    
+    .img-two {
+        background-image: url(../img/asia.jpg);
+    }
+    
+    .img-three {
+        background-image: url(../img/oceania.jpg);
+    }
+    
+    .img-four {
+        background-image: url(../img/northamerica.jpg);
+    }
+    
+    .img-five {
+        background-image: url(../img/southamerica.jpg);
+    }
+    
+    .container table{
+        margin: 50px 0px 100px 0px;
+    }
+}
+
+/* ****************** MAIN BIO ****************** */
+.biografia {
+    background-image: url(../img/blackandred.jpg);
+    width: 100%;
+    background-position: center top;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.biografia__titulo {
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.container p {
+    color: #f0f0f0;
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 1.1rem;
+    padding: 20px;
+    align-self: center;
+}
+
+.container img {
+    padding: 25px;
+}
+
+
+
+
+/* ******************CSS main merch****************** */
+.construction {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* ********************CSS main contact******************** */
+
+.contact {
+    background-image: url(../img/contactus.jpg);
+    width: 100%;
+    height: auto;
+    background-position: center top;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.contact__title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.7rem;
+    margin: 0px 10px;
+    color: #1f1e22;
+}
+
+.container form {
+    margin: 5px 10px 70px 10px;
+}
+
+.container label {
+    font-size: 1.5rem;
+    color: #1f1e22;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-buttons .btn{
+    margin: 10px 25px;
+}
