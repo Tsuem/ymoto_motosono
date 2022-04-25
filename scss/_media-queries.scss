@@ -57,7 +57,7 @@
 
 
     /* ***** main music&video ***** */
-    .musicAndVideo__titulo {
+    .title_musicAndVideo {
         font-size: large;
     }
 
@@ -84,10 +84,30 @@
     }
 
 
-    /* ***** main tour ***** */
-    
-    .tour__title {
-        font-size: xx-large;
+    /* ***** main bio ***** */
+    .bio {
+        height: 110vh;
+    }
+
+    .title_bio {
+        font-size: 2.2rem;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .container p {
+        font-size: 0.75rem;
+        letter-spacing: 1.1px;
+        padding: 7px;
+        margin: 15px;
+    }
+
+    .container img {
+        padding: 20px;
+        height: 420px;
+        width: auto;
     }
 }
 
@@ -166,6 +186,23 @@
     .musicAndVideo__spotify iframe {
         margin-bottom: 30px;
     }
+
+
+    /* ***** main bio ***** */
+    .bio {
+        height: 140vh;
+    }
+
+    .title_bio {
+        font-size: 2.8rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+        padding: 10px;
+        margin: 15px;
+    }
 }
 
 
@@ -212,8 +249,23 @@
         margin: 20px;
     }
 
-    /* ***** main music&video ***** */
     .musicAndVideo__spotify iframe {
         margin-bottom: 30px;
+    }
+
+    
+    /* ***** main bio ***** */
+    .bio {
+        height: 100vh;
+    }
+
+    .container img {
+        height: 485px;
+        width: auto;
+    }
+
+    .container p {
+        font-size: 0.9em;
+        letter-spacing: 1.5px;
     }
 }

@@ -1,7 +1,7 @@
 {
   "name": "ymoto_motosono",
   "version": "1.0.0",
-  "description": "",
+  "description": "Blog about the artist, dj and music producer YMOTO",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
