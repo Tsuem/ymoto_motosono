@@ -1,7 +1,7 @@
 # ymoto_motosono
 Mi primer proyecto para el curso de Desarrollo web en Coderhouse
 
-CAMBIOS HECHOS PARA EL SEPTIMO DESAFIO DE SASS II + SEO
+<h2> CAMBIOS HECHOS PARA EL SEPTIMO DESAFIO DE SASS II + SEO </h2>
 *Agregué en el head de cada html:
 <meta name="description" content="Blog about the artist, dj and music producer YMOTO">
 <meta name="keywords" content="YMOTO, DJ, ARTIST, MUSIC, MUSIC PRODUCER">
