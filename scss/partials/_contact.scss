@@ -1,0 +1,33 @@
+.contact {
+    background-image: url(../img/contactus.jpg);
+    width: 100%;
+    height: auto;
+    background-position: center top;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.title_contact {
+    @extend h1;
+    color: $letter-black;
+}
+
+.container form {
+    margin: 5px 10px 70px 10px;
+}
+
+.container label {
+    font-size: $_fs-25;
+    color: $letter-black;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-buttons .btn{
+    margin: 10px 25px;
+}

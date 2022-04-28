@@ -1,0 +1,49 @@
+/* ****************** FOOTER ****************** */
+footer {
+    color: $letter-white;
+    font-size: $fs-footer;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+
+    .bi {
+        font-size: $fs-icons;
+        margin: 0 5px;
+    }
+
+    .bi-arrow-up-circle {
+        float: right;
+        transition: $transition;
+
+        &:hover{
+            transform:scale(0.90);
+            -webkit-transform: scale(0.90); 
+        }
+    }
+
+    .fa-brands {
+        font-size: $fs-icons;
+        letter-spacing: 15px;
+        transition: $transition;
+
+        &:hover{
+            transform:scale(0.90);
+            -webkit-transform: scale(0.90); 
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* *********** HACIENDO USO DE MAP *********** */
+$redes: (soundcloud: #ff7700de, spotify: #1ccc5ada, youtube: #c4302bde, instagram: #dd2a7bce, facebook: #3b5999de);
+
+/* Bucle para usar los valores de map */
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        color: $color;
+    }
+}

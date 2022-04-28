@@ -1,0 +1,10 @@
+/* DECLARANDO UN H1 */
+h1 {
+    font-family: $font-title;
+    font-size: $fs-title-l;
+    color: $letter-white;
+    margin: $margin;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

@@ -1,0 +1,62 @@
+.artist {
+    min-height: auto;
+
+    video {
+        position: fixed;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        z-index: -1;
+    }
+
+    .artist__presentation {
+        margin: 50px;
+        justify-items: center;
+        align-items: center;
+
+        img {
+            @include sizes(100%, auto);
+            opacity: 96%; 
+        }
+    }
+
+    
+    .artist__content {
+        color: $letter-white;
+        background-color: $background-gray;
+        box-shadow: $box-shadow;
+        justify-items: center;
+        min-width: fit-content;
+        padding: 15px;
+        display: grid;
+        font-size: large;
+    }
+
+    h1 {
+        font-size: $fs-title-l;
+    }
+
+    h3 {
+        font-family: $font-h3;
+        font-size: $fs-h3;
+        text-align: center;
+        align-self: center;
+    }
+
+    q::before {
+        content: "«";
+        color: $letter-gold;
+        font-weight: bolder;
+      }
+      q::after {
+        content: "»";
+        color: $letter-gold;
+        font-weight: bolder;
+      }
+
+    a {
+        margin: 20px 0px 15px 0px;
+        color: $letter-white;
+        text-decoration: none;
+    }
+}

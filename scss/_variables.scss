@@ -1,18 +1,73 @@
-// colors
-$_white: #f0f0f0;
+//COLORS
+$_white: #fff;
 $_black: #000000;
-$_shadow: rgba(0, 0, 0, 0.962);
+$_cod-gray: #181818;
+$_gray: #302e2eaf;
+$_goldenrod: #daa520;
+$_orange: #ff7700de;
+$_green: #1ccc5ada;
+$_red: #c4302bde;
+$_hotpink: #dd2a7bce;
+$_blue: #3b5999de;
 
-$white-letter: $_white;
-$black-letter: $_black;
-$box-shadow: 0px 5px 10px $_shadow;
 
-//typo
-$body-font: 'Manrope', sans-serif;
-$title-font: 'Oswald', sans-serif;
+$background-gray: $_gray;
+$background-dark-color: $_cod-gray;
+$background-darker-color: $_black;
 
-$navbar-fontsize: 1.3em;
-$title-fontsize: 3.5rem;
-$footer-fontsize: 1.1em;
-$socialbar-size: 2em;
+$letter-white: $_white;
+$letter-black: $_black;
+$letter-gold: $_goldenrod;
 
+$shadow: $_cod-gray;
+
+$souncloud-color: $_orange;
+$spotify-color: $_green;
+$youtube-color: $_red;
+$instagram-color: $_hotpink;
+$facebook-color: $_blue;
+
+
+
+//TYPOGRAPHY
+$font-body: 'Manrope', sans-serif;
+$font-title: 'Oswald', sans-serif;
+$font-h3: 'Poiret One', cursive;
+$font-q: 'Noto Serif Display', serif;
+
+//Typography scale
+$fs-base: 16;
+
+$_fs-9: 9 / $fs-base + rem;
+$_fs-12: 12 / $fs-base + rem;
+$_fs-14: 14 / $fs-base + rem;
+$_fs-19: 19 / $fs-base + rem;
+$_fs-25: 25 / $fs-base + rem;
+$_fs-33: 33 / $fs-base + rem;
+$_fs-44: 44 / $fs-base + rem;
+$_fs-55: 55 / $fs-base + rem;
+
+//Typography applications
+$fs-title-l: $_fs-55;
+$fs-title-m: $_fs-44;
+$fs-icons: $_fs-33;
+$fs-h3: $_fs-25;
+$fs-navbar-l: $_fs-25;
+$fs-navbar-m: $_fs-19;
+$fs-q: $_fs-19;
+$fs-p: $_fs-19;
+$fs-a: $_fs-19;
+$fs-footer: $_fs-14;
+$fs-btn: $_fs-12;
+
+
+//BOX
+$box-shadow: 0px 5px 10px $shadow;
+
+
+//TRANSITION
+$transition: all .4s ease-in-out;
+
+
+//MARGIN
+$margin: 60px 10px 20px 10px;

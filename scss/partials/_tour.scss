@@ -1,0 +1,58 @@
+main {
+    .title_tour {
+        @extend h1;
+        color: $letter-black;
+    }
+
+    a {
+        color: $letter-black;
+        font-size: $fs-a;
+        padding: 5px;
+    }
+
+
+    .parallax{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        height:30rem;
+        max-width: 100%;
+        position: relative
+    }
+    
+    .parallax-caption {
+        color:$letter-white;
+        left: 10%;
+        position: absolute;
+        text-align: center;
+        top:40%;
+        width: 80%;
+        font-family: $font-h3;
+        font-size: $fs-title-l;
+    }
+    
+    .img-one {
+        background-image: url(../img/europe.jpg);
+    }
+    
+    .img-two {
+        background-image: url(../img/asiaspeed.jpg);
+    }
+    
+    .img-three {
+        background-image: url(../img/oceaniaspeed.jpg);
+    }
+    
+    .img-four {
+        background-image: url(../img/northamericaspeed.jpg);
+    }
+    
+    .img-five {
+        background-image: url(../img/southamericaspeed.jpg);
+    }
+    
+    .container table{
+        margin: 50px 0px 100px 0px;
+    }
+}

@@ -1,0 +1,22 @@
+.musicAndVideo {
+    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    background-position: center top;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    .title_musicAndVideo {
+        @extend h1;
+        box-shadow: $box-shadow;
+    }
+
+    .carousel {
+        margin: 30px;
+    }
+
+    .notCarousel {
+        margin: 15px;
+    }
+}

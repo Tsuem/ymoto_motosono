@@ -2,7 +2,7 @@
 
     /* ***** header ***** */
     .navbar {
-        font-size: medium;
+        font-size: $fs-navbar-m;
     }
 
     .nav-link {
@@ -31,7 +31,7 @@
         margin-bottom: 35px;
     }
 
-    .mapa__responsive iframe {
+    .map__responsive iframe {
         width: 70%;
         height: auto;
         margin-bottom: 25px;
@@ -42,7 +42,7 @@
         margin-top: -60px;
     }
 
-    .mapa h5 {
+    .map h5 {
         font-size: medium;
     }
 
@@ -135,7 +135,7 @@
         margin-bottom: 30px;
     }
 
-    .mapa__responsive iframe {
+    .map__responsive iframe {
         width: 80%;
         height: auto;
         margin-bottom: 25px;
@@ -146,7 +146,7 @@
         margin-top: -60px;
     }
 
-    .mapa h5 {
+    .map h5 {
         font-size: medium;
     }
 
@@ -219,7 +219,7 @@
         font-size: 1em;
     }
 
-    .mapa__responsive iframe {
+    .map__responsive iframe {
         width: 90%;
         margin-bottom: 15px;
     }
@@ -229,7 +229,7 @@
         margin-top: -70px;
     }
 
-    .mapa h5 {
+    .map h5 {
         font-size: large;
         margin-top: -70px;
     }
