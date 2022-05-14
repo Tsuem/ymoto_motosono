@@ -31,7 +31,7 @@ main {
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
-h1, .musicAndVideo .title_musicAndVideo, main .title_tour, .title_bio, .title_contact {
+h1, .title_bio, .title_merch, .title_contact {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -310,98 +310,183 @@ template {
 *::after {
   box-sizing: border-box; }
 
-@media (min-width: 250px) and (max-width: 575px) {
+@media (max-width: 350px) {
   /* ***** header ***** */
-  .navbar {
+  .navbar-nav {
+    font-size: 0.875rem; }
+  .nav-link {
+    margin: 5px 0px 5px 25px;
+    padding: 10px; }
+  .navbar-brand img {
+    height: 6rem; }
+  /* ***** main titles ***** */
+  main h1, main .title_bio, main .title_merch, main .title_contact {
+    font-size: 1.5625rem; }
+  /* ***** main index ***** */
+  .artist {
+    height: 85vh; }
+    .artist .videobg {
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .artist__presentation img {
+    margin-bottom: 35px; }
+  /* ***** footer ***** */
+  footer .fa-brands {
+    font-size: 1.5625rem;
+    margin-bottom: 25px; }
+  footer .map__responsive iframe {
+    width: 70%;
+    height: auto;
+    margin-bottom: 25px; }
+  footer .socialBar h5 {
+    font-size: 0.75rem; }
+  footer .map h5 {
+    font-size: 0.75rem; }
+  footer .copyright h6 {
+    font-size: 0.5625rem; }
+  /* ***** main bio ***** */
+  .bio .container p {
+    font-size: 0.5625rem; }
+  .bio .container img {
+    height: 320px; }
+  /* ***** icon-nav merch ***** */
+  .icon-nav .bi-person-circle {
+    font-size: 1.5625rem; }
+  .icon-nav .bi-cart3 {
+    font-size: 1.5625rem; }
+  .icon-nav .bi-heart-fill {
+    font-size: 1.5625rem; }
+  /* ***** main contact ***** */
+  .contact .container label {
+    font-size: 1.1875rem; }
+  /* ***** main tour ***** */
+  .parallax-caption h1, .parallax-caption .title_bio, .parallax-caption .title_merch, .parallax-caption .title_contact {
+    font-family: "Poiret One", cursive;
+    font-size: 2.0625rem; }
+  .tour__content .parallax {
+    height: 20rem; }
+  .tour__content thead {
+    font-size: 0.875rem; }
+  .tour__content tbody {
+    font-size: 0.5625rem; }
+  .tour__nav a {
+    font-size: 0.875rem;
+    transition: all 0.4s ease-in-out; }
+    .tour__nav a:hover {
+      color: #800040; } }
+
+@media (min-width: 350px) and (max-width: 524px) {
+  /* ***** header ***** */
+  .navbar-nav {
     font-size: 1.1875rem; }
   .nav-link {
     margin: 5px 0px 5px 25px;
     padding: 10px; }
+  /* ***** main titles ***** */
+  main h1, main .title_bio, main .title_merch, main .title_contact {
+    font-size: 2.0625rem; }
   /* ***** main index ***** */
+  .artist {
+    height: 85vh; }
+    .artist .videobg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2; }
   .artist__presentation img {
-    margin-bottom: 15px; }
+    margin-bottom: 35px; }
   .artist__content {
     font-size: medium; }
   /* ***** footer ***** */
-  .footer {
-    font-size: 0.8em; }
-  .fa-brands {
-    margin-bottom: 35px; }
-  .map__responsive iframe {
+  footer .fa-brands {
+    font-size: 2.0625rem;
+    margin-bottom: 30px; }
+  footer .map__responsive iframe {
     width: 70%;
     height: auto;
     margin-bottom: 25px; }
-  .socialBar h5 {
-    font-size: medium;
-    margin-top: -60px; }
-  .map h5 {
-    font-size: medium; }
-  .copyright h6 {
-    font-size: small; }
-  .bi-arrow-up-circle {
-    padding: 15px;
-    margin: 5px; }
+  footer .socialBar h5 {
+    font-size: 0.75rem; }
+  footer .map h5 {
+    font-size: 0.75rem; }
+  footer .copyright h6 {
+    font-size: 0.5625rem; }
   /* ***** main music&video ***** */
-  .title_musicAndVideo {
-    font-size: large; }
-  .carousel {
-    margin: 10px; }
-  .container .notCarousel {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px; }
-  .notCarousel {
-    margin: 30px; }
   .musicAndVideo__spotify {
-    width: 70%; }
+    width: 75%; }
   .musicAndVideo__spotify iframe {
     margin-bottom: 30px; }
   /* ***** main bio ***** */
-  .bio {
-    height: 110vh; }
-  .title_bio {
-    font-size: 2.2rem; }
-  .container {
-    justify-content: center; }
-  .container p {
-    font-size: 0.75rem;
-    letter-spacing: 1.1px;
-    padding: 7px;
-    margin: 15px; }
-  .container img {
-    padding: 20px;
-    height: 420px;
-    width: auto; } }
+  .bio .container p {
+    font-size: 0.75rem; }
+  .bio .container img {
+    height: 350px; }
+  /* ***** icon-nav merch ***** */
+  .icon-nav .bi-person-circle {
+    font-size: 1.5625rem; }
+  .icon-nav .bi-cart3 {
+    font-size: 1.5625rem; }
+  .icon-nav .bi-heart-fill {
+    font-size: 1.5625rem; }
+  /* ***** main contact ***** */
+  .contact .container label {
+    font-size: 1.1875rem; }
+  /* ***** main tour ***** */
+  .parallax-caption h1, .parallax-caption .title_bio, .parallax-caption .title_merch, .parallax-caption .title_contact {
+    font-family: "Poiret One", cursive;
+    font-size: 2.75rem; }
+  .tour__content .parallax {
+    height: 23rem; }
+  .tour__content thead {
+    font-size: 0.875rem; }
+  .tour__content tbody {
+    font-size: 0.75rem; }
+  .tour__nav a {
+    font-size: 0.875rem;
+    transition: all 0.4s ease-in-out; }
+    .tour__nav a:hover {
+      color: #800040; } }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 524px) and (max-width: 767px) {
   /* ***** header ***** */
-  .navbar {
-    font-size: large; }
+  .navbar-nav {
+    font-size: 1.1875rem; }
+  .nav-link {
+    margin: 5px 0px 5px 25px;
+    padding: 10px; }
+  /* ***** main titles ***** */
+  main h1, main .title_bio, main .title_merch, main .title_contact {
+    font-size: 2.75rem; }
   /* ***** main index ***** */
-  .artist__presentation img {
-    margin-bottom: 15px; }
+  .artist {
+    height: 50vh; }
+    .artist .videobg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2; }
   /* ***** footer ***** */
-  .footer {
-    font-size: 0.9em; }
-  .fa-brands {
+  footer .fa-brands {
+    font-size: 2.0625rem;
     margin-bottom: 30px; }
-  .map__responsive iframe {
-    width: 80%;
+  footer .map__responsive iframe {
+    width: 70%;
     height: auto;
     margin-bottom: 25px; }
-  .socialBar h5 {
-    font-size: medium;
-    margin-top: -60px; }
-  .map h5 {
-    font-size: medium; }
-  .copyright h6 {
-    font-size: small; }
-  .bi-arrow-up-circle {
-    padding: 10px;
-    margin: 5px; }
+  footer .socialBar h5 {
+    font-size: 0.875rem; }
+  footer .map h5 {
+    font-size: 0.875rem; }
+  footer .copyright h6 {
+    font-size: 0.75rem; }
   /* ***** main music&video ***** */
-  .musicAndVideo__titulo {
-    font-size: xx-large; }
   .carousel {
     margin: 10px; }
   .container .notCarousel {
@@ -415,100 +500,186 @@ template {
   .musicAndVideo__spotify iframe {
     margin-bottom: 30px; }
   /* ***** main bio ***** */
-  .bio {
-    height: 140vh; }
-  .title_bio {
-    font-size: 2.8rem; }
-  .container p {
-    font-size: 0.9rem;
-    letter-spacing: 1.5px;
-    padding: 10px;
-    margin: 15px; } }
+  .bio .container p {
+    font-size: 0.875rem; }
+  .bio .container img {
+    height: 370px; }
+  /* ***** icon-nav merch ***** */
+  .icon-nav .bi-person-circle {
+    font-size: 1.5625rem; }
+  .icon-nav .bi-cart3 {
+    font-size: 1.5625rem; }
+  .icon-nav .bi-heart-fill {
+    font-size: 1.5625rem; }
+  /* ***** main contact ***** */
+  .contact .container label {
+    font-size: 1.5625rem; }
+  /* ***** main tour ***** */
+  .parallax-caption h1, .parallax-caption .title_bio, .parallax-caption .title_merch, .parallax-caption .title_contact {
+    font-family: "Poiret One", cursive;
+    font-size: 2.75rem; }
+  .tour__content .parallax {
+    height: 23rem; }
+  .tour__content thead {
+    font-size: 1.1875rem; }
+  .tour__content tbody {
+    font-size: 0.875rem; }
+  .tour__nav a {
+    font-size: 1.1875rem;
+    transition: all 0.4s ease-in-out; }
+    .tour__nav a:hover {
+      color: #800040; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
   /* ***** header ***** */
-  .navbar {
-    font-size: larger; }
+  .navbar-nav {
+    font-size: 1.1875rem; }
+  .nav-link {
+    margin: 5px 0px 5px 25px;
+    padding: 10px; }
   /* ***** footer ***** */
-  .footer {
-    font-size: 1em; }
   .map__responsive iframe {
     width: 90%;
     margin-bottom: 15px; }
   .socialBar h5 {
-    font-size: large;
-    margin-top: -70px; }
+    font-size: 1.1875rem; }
   .map h5 {
-    font-size: large;
-    margin-top: -70px; }
+    font-size: 1.1875rem; }
   .copyright h6 {
-    font-size: medium; }
-  .bi-arrow-up-circle {
-    padding: 20px;
-    margin: 5px; }
+    font-size: 0.875rem; }
+  /* ***** main index ***** */
+  .artist {
+    height: 50vh; }
+    .artist .videobg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2; }
   /* ***** main music&video ***** */
-  .carousel {
-    margin: 20px; }
-  .musicAndVideo__spotify iframe {
-    margin-bottom: 30px; }
+  .musicAndVideo .carousel-caption h5 {
+    font-size: 1.1875rem;
+    font-weight: bold; }
+  .musicAndVideo .carousel-caption p {
+    font-size: 0.875rem; }
   /* ***** main bio ***** */
-  .bio {
-    height: 100vh; }
-  .container img {
-    height: 485px;
-    width: auto; }
-  .container p {
-    font-size: 0.9em;
-    letter-spacing: 1.5px; } }
+  .bio .container p {
+    font-size: 0.875rem; }
+  .bio .container img {
+    height: 370px; }
+  /* ***** icon-nav merch ***** */
+  .icon-nav .bi-person-circle {
+    font-size: 2.0625rem; }
+  .icon-nav .bi-cart3 {
+    font-size: 2.0625rem; }
+  .icon-nav .bi-heart-fill {
+    font-size: 2.0625rem; }
+  /* ***** main contact ***** */
+  .contact .container label {
+    font-size: 1.5625rem; }
+  /* ***** main tour ***** */
+  .parallax-caption h1, .parallax-caption .title_bio, .parallax-caption .title_merch, .parallax-caption .title_contact {
+    font-family: "Poiret One", cursive;
+    font-size: 2.75rem; }
+  .tour__nav a {
+    font-size: 1.1875rem;
+    transition: all 0.4s ease-in-out; }
+    .tour__nav a:hover {
+      color: #800040; } }
+
+@media (min-width: 991px) and (max-width: 3000px) {
+  /* ***** main index ***** */
+  .artist {
+    min-height: 55vh; }
+    .artist footer {
+      position: sticky;
+      top: 100%; }
+    .artist .videobg {
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat; }
+  /* ***** main contact ***** */
+  .contact .container label {
+    font-size: 1.5625rem; }
+  /* ***** main music&video ***** */
+  .musicAndVideo .carousel-caption h5 {
+    font-size: 1.5625rem; }
+  .musicAndVideo .carousel-caption p {
+    font-size: 0.875rem; }
+  /* ***** main tour ***** */
+  .parallax-caption h1, .parallax-caption .title_bio, .parallax-caption .title_merch, .parallax-caption .title_contact {
+    font-family: "Poiret One", cursive;
+    font-size: 3.4375rem; }
+  .tour__nav a {
+    font-size: 1.1875rem;
+    transition: all 0.4s ease-in-out; }
+    .tour__nav a:hover {
+      color: #800040; } }
+
+@keyframes movimiento {
+  0% {
+    transform: translate(0) translateZ(0); }
+  50% {
+    transform: translateY(10px) translateZ(0); }
+  to {
+    transform: translate(0) translateZ(0); } }
 
 body {
   font-family: "Manrope", sans-serif; }
 
-/* DECLARANDO UN H1 */
-h1, .musicAndVideo .title_musicAndVideo, main .title_tour, .title_bio, .title_contact {
+h1, .title_bio, .title_merch, .title_contact {
   font-family: "Oswald", sans-serif;
   font-size: 3.4375rem;
+  font-weight: bold;
   color: #fff;
   margin: 60px 10px 20px 10px;
   justify-content: center;
   align-items: center;
   display: flex; }
 
-.navbar {
-  font-size: 1.5625rem;
-  box-shadow: 0px 5px 10px #181818; }
-  .navbar .logo {
-    height: 7rem; }
-  .navbar .nav-link {
+.bi {
+  font-size: 2.0625rem;
+  margin: 0 5px; }
+
+.bi-arrow-up-circle {
+  float: right;
+  margin-right: -40px;
+  transition: all 0.4s ease-in-out; }
+  .bi-arrow-up-circle:hover {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9); }
+
+.fa-brands {
+  font-size: 2.0625rem;
+  letter-spacing: 15px;
+  transition: all 0.4s ease-in-out; }
+  .fa-brands:hover {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9); }
+
+header {
+  box-shadow: 0px 5px 10px #1e1e20ff;
+  font-size: x-large; }
+  header .nav-link {
     margin: 10px;
     padding: 10px; }
+  header .navbar-brand img {
+    height: 7rem; }
 
 /* ****************** FOOTER ****************** */
 footer {
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 1.1875rem;
   padding: 20px;
   width: 100%;
   bottom: 0; }
-  footer .bi {
-    font-size: 2.0625rem;
-    margin: 0 5px; }
-  footer .bi-arrow-up-circle {
-    float: right;
-    transition: all 0.4s ease-in-out; }
-    footer .bi-arrow-up-circle:hover {
-      transform: scale(0.9);
-      -webkit-transform: scale(0.9); }
-  footer .fa-brands {
-    font-size: 2.0625rem;
-    letter-spacing: 15px;
-    transition: all 0.4s ease-in-out; }
-    footer .fa-brands:hover {
-      transform: scale(0.9);
-      -webkit-transform: scale(0.9); }
   footer iframe {
     width: 100%;
     height: auto; }
+  footer h6 {
+    font-size: 0.875rem; }
 
 /* *********** HACIENDO USO DE MAP *********** */
 /* Bucle para usar los valores de map */
@@ -527,50 +698,52 @@ footer {
 .btn--facebook {
   color: #3b5999de; }
 
-.artist {
-  min-height: auto; }
-  .artist video {
-    position: fixed;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    z-index: -1; }
-  .artist .artist__presentation {
-    margin: 50px;
-    justify-items: center;
-    align-items: center; }
-    .artist .artist__presentation img {
-      height: auto;
-      max-width: 100%;
-      opacity: 96%; }
-  .artist .artist__content {
-    color: #fff;
-    background-color: #302e2eaf;
-    box-shadow: 0px 5px 10px #181818;
-    justify-items: center;
-    min-width: fit-content;
-    padding: 15px;
-    display: grid;
-    font-size: large; }
-  .artist h1, .artist .musicAndVideo .title_musicAndVideo, .musicAndVideo .artist .title_musicAndVideo, .artist main .title_tour, main .artist .title_tour, .artist .title_bio, .artist .title_contact {
-    font-size: 3.4375rem; }
-  .artist h3 {
+.artist .videobg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -2; }
+
+.artist .artist__presentation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 10px; }
+  .artist .artist__presentation img {
+    width: 15rem;
+    transition: 2s;
+    animation: movimiento 3s ease-in-out infinite;
+    align-self: center; }
+
+.artist .artist_content {
+  color: #fff;
+  background-color: rgba(69, 68, 68, 0.799);
+  justify-items: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; }
+  .artist .artist_content h1, .artist .artist_content .title_bio, .artist .artist_content .title_merch, .artist .artist_content .title_contact {
+    font-size: 2.75rem;
+    margin: 15px; }
+  .artist .artist_content h3 {
     font-family: "Poiret One", cursive;
     font-size: 1.5625rem;
     text-align: center;
     align-self: center; }
-  .artist q::before {
+  .artist .artist_content q {
+    font-family: "Poiret One", serif;
+    font-size: 1.1875rem; }
+  .artist .artist_content q::before {
     content: "«";
-    color: #daa520;
+    color: #800040;
     font-weight: bolder; }
-  .artist q::after {
+  .artist .artist_content q::after {
     content: "»";
-    color: #daa520;
+    color: #800040;
     font-weight: bolder; }
-  .artist a {
-    margin: 20px 0px 15px 0px;
-    color: #fff;
-    text-decoration: none; }
+  .artist .artist_content a {
+    margin-top: 20px; }
 
 .musicAndVideo {
   background-image: url(../img/fondo.jpg);
@@ -580,18 +753,14 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1; }
-  .musicAndVideo .title_musicAndVideo {
-    box-shadow: 0px 5px 10px #181818; }
-  .musicAndVideo .carousel {
-    margin: 30px; }
   .musicAndVideo .notCarousel {
     margin: 15px; }
 
 main .title_tour {
-  color: #000000; }
+  color: #000; }
 
 main a {
-  color: #000000;
+  color: #000;
   font-size: 1.1875rem;
   padding: 5px; }
 
@@ -600,7 +769,7 @@ main .parallax {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30rem;
+  height: 25rem;
   max-width: 100%;
   position: relative; }
 
@@ -610,9 +779,7 @@ main .parallax-caption {
   position: absolute;
   text-align: center;
   top: 40%;
-  width: 80%;
-  font-family: "Poiret One", cursive;
-  font-size: 3.4375rem; }
+  width: 80%; }
 
 main .img-one {
   background-image: url(../img/europe.jpg); }
@@ -635,28 +802,32 @@ main .container table {
 .bio {
   background-image: url(../img/blackandred.jpg);
   width: 100%;
-  height: 115vh;
   background-position: center top;
   display: inline-block;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1; }
 
+.bio-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-around; }
+
 .container p {
   color: #fff;
   font-size: 1.1875rem;
   letter-spacing: 2px;
   padding: 20px;
-  align-self: center; }
+  align-self: center;
+  text-align: justify; }
 
 .container img {
-  padding: 25px; }
+  padding: 25px;
+  height: 350px; }
 
-.construction {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  height: auto; }
+.title_merch {
+  color: #000; }
 
 .contact {
   background-image: url(../img/contactus.jpg);
@@ -669,14 +840,13 @@ main .container table {
   z-index: -1; }
 
 .title_contact {
-  color: #000000; }
+  color: #000; }
 
 .container form {
   margin: 5px 10px 70px 10px; }
 
 .container label {
-  font-size: 1.5625rem;
-  color: #000000; }
+  color: #000; }
 
 .contact-buttons {
   display: flex;

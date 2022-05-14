@@ -7,15 +7,6 @@
     background-size: cover;
     z-index: -1;
 
-    .title_musicAndVideo {
-        @extend h1;
-        box-shadow: $box-shadow;
-    }
-
-    .carousel {
-        margin: 30px;
-    }
-
     .notCarousel {
         margin: 15px;
     }

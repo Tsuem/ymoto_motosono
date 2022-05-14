@@ -1,0 +1,26 @@
+.bi {
+    font-size: $fs-icons-m;
+    margin: 0 5px;
+}
+
+.bi-arrow-up-circle {
+    float: right;
+    margin-right: -40px;
+    transition: $transition;
+
+    &:hover{
+        transform:scale(0.90);
+        -webkit-transform: scale(0.90); 
+    }
+}
+
+.fa-brands {
+    font-size: $fs-icons-m;
+    letter-spacing: 15px;
+    transition: $transition;
+
+    &:hover{
+        transform:scale(0.90);
+        -webkit-transform: scale(0.90); 
+    }
+}

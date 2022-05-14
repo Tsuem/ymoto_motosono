@@ -1,62 +1,67 @@
 .artist {
-    min-height: auto;
-
-    video {
+    
+    .videobg {
         position: fixed;
+        left: 0;
         top: 0;
-        right: 0;
-        min-width: 100%;
-        z-index: -1;
+        z-index: -2;
     }
 
     .artist__presentation {
-        margin: 50px;
-        justify-items: center;
-        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        padding-top: 10px;
 
         img {
-            @include sizes(100%, auto);
-            opacity: 96%; 
+            width: 15rem;     
+            transition: 2s;
+            animation: movimiento 3s ease-in-out infinite;
+            align-self: center; 
         }
     }
 
-    
-    .artist__content {
+    .artist_content {
         color: $letter-white;
-        background-color: $background-gray;
-        box-shadow: $box-shadow;
+        background-color: rgba(69, 68, 68, 0.799);
         justify-items: center;
-        min-width: fit-content;
         padding: 15px;
-        display: grid;
-        font-size: large;
-    }
+        display: flex;
+        flex-direction: column;
 
-    h1 {
-        font-size: $fs-title-l;
-    }
 
-    h3 {
-        font-family: $font-h3;
-        font-size: $fs-h3;
-        text-align: center;
-        align-self: center;
-    }
+        h1 {
+            font-size: $fs-title-m;
+            margin: 15px;
+        }
 
-    q::before {
-        content: "«";
-        color: $letter-gold;
-        font-weight: bolder;
-      }
-      q::after {
-        content: "»";
-        color: $letter-gold;
-        font-weight: bolder;
-      }
+        h3 {
+            font-family: $font-h3;
+            font-size: $fs-h3;
+            text-align: center;
+            align-self: center;
+        }
 
-    a {
-        margin: 20px 0px 15px 0px;
-        color: $letter-white;
-        text-decoration: none;
+        q {
+            font-family: $font-q;
+            font-size: $fs-q;
+        }
+
+        q::before {
+            content: "«";
+            color: $secondary;
+            font-weight: bolder;
+        }
+    
+        q::after {
+            content: "»";
+            color: $secondary;
+            font-weight: bolder;
+        }
+
+        a {
+            margin-top: 20px;
+        }
     }
 }

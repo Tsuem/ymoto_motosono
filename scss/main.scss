@@ -10,10 +10,12 @@
 
 //TOOLS 
 @import "tools/mixins";
+@import "tools/animations";
 
 //ELEMENTS
 @import "elements/body";
 @import "elements/headings";
+@import "elements/icons";
 
 //ORGANISMS
 @import "organisms/header";

@@ -1,6 +1,4 @@
-.construction {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
+.title_merch {
+    @extend h1;
+    color: $letter-black;
 }

@@ -1,13 +1,13 @@
-.navbar {
-    font-size: $fs-navbar-l;
+header {
     box-shadow: $box-shadow;
-
-    .logo {
-        height: 7rem;
-    }
+    font-size: x-large;
 
     .nav-link {
         margin: 10px;
         padding: 10px;
+    }
+
+    .navbar-brand img {
+        height: 7rem;
     }
 }

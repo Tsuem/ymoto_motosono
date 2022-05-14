@@ -1,7 +1,139 @@
-@media (min-width: 250px) and (max-width: 575px) {
-
+@media (max-width: 350px) {
     /* ***** header ***** */
-    .navbar {
+    .navbar-nav {
+        font-size: $fs-navbar-s;
+    }
+
+    .nav-link {
+        margin: 5px 0px 5px 25px;
+        padding: 10px;
+    }
+
+    .navbar-brand img {
+        height: 6rem;
+    }
+
+
+    /* ***** main titles ***** */
+    main h1 {
+        font-size: $fs-title-xs;
+    }
+
+
+    /* ***** main index ***** */
+    .artist {
+        height: 85vh;
+
+        .videobg {
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .artist__presentation img {
+        margin-bottom: 35px;
+    }
+
+
+    /* ***** footer ***** */
+    footer {
+        .fa-brands {
+            font-size: $fs-icons-s;
+            margin-bottom: 25px;
+        }
+
+        .map__responsive iframe {
+            width: 70%;
+            height: auto;
+            margin-bottom: 25px;
+        }
+    
+        .socialBar h5 {
+            font-size: $fs-footer-m;
+        }
+    
+        .map h5 {
+            font-size: $fs-footer-m;
+        }
+    
+        .copyright h6 {
+            font-size: $fs-footer-s;
+        }
+    }
+
+
+    /* ***** main bio ***** */   
+    .bio .container {
+        p {
+            font-size: $fs-p-xs;
+        }
+
+        img {
+            height: 320px;
+        }
+    }
+
+
+    /* ***** icon-nav merch ***** */   
+    .icon-nav {
+        .bi-person-circle {
+            font-size: $fs-icons-s;
+        }
+    
+        .bi-cart3 {
+            font-size: $fs-icons-s;
+        }
+    
+        .bi-heart-fill {
+            font-size: $fs-icons-s;
+        }
+    }
+
+ 
+    /* ***** main contact ***** */   
+    .contact {
+        .container label {
+            font-size: $fs-label-s;
+        }
+    }
+
+
+    /* ***** main tour ***** */   
+    .parallax-caption h1 {
+        font-family: $font-h3;
+        font-size: $fs-title-s;
+    }
+
+    .tour__content {
+        .parallax {
+            height: 20rem;
+        }
+
+        thead {
+            font-size: $fs-p-m;
+        }
+
+        tbody {
+            font-size: $fs-p-xs;
+        }
+    }
+
+    .tour__nav a {
+        font-size: $fs-navbar-s;
+        transition: $transition;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
+
+
+@media (min-width: 350px) and (max-width: 524px) {
+    /* ***** header ***** */
+    .navbar-nav {
         font-size: $fs-navbar-m;
     }
 
@@ -11,9 +143,29 @@
     }
 
 
+    /* ***** main titles ***** */
+    main h1 {
+        font-size: $fs-title-s;
+    }
+
+
     /* ***** main index ***** */
+    .artist {
+        height: 85vh;
+
+        .videobg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -2;
+        }
+    }
+
     .artist__presentation img {
-        margin-bottom: 15px;
+        margin-bottom: 35px;
     }
 
     .artist__content {
@@ -23,60 +175,36 @@
 
 
     /* ***** footer ***** */
-    .footer {
-        font-size: 0.8em;
+    footer {
+        .fa-brands {
+            font-size: $fs-icons-m;
+            margin-bottom: 30px;
+        }
+    
+        .map__responsive iframe {
+            width: 70%;
+            height: auto;
+            margin-bottom: 25px;
+        }
+    
+        .socialBar h5 {
+            font-size: $fs-footer-m;
+        }
+    
+        .map h5 {
+            font-size: $fs-footer-m;
+        }
+    
+        .copyright h6 {
+            font-size: $fs-footer-s;
+        }
     }
 
-    .fa-brands {
-        margin-bottom: 35px;
-    }
-
-    .map__responsive iframe {
-        width: 70%;
-        height: auto;
-        margin-bottom: 25px;
-    }
-
-    .socialBar h5 {
-        font-size: medium;
-        margin-top: -60px;
-    }
-
-    .map h5 {
-        font-size: medium;
-    }
-
-    .copyright h6 {
-        font-size: small;
-    }
-
-    .bi-arrow-up-circle {
-        padding: 15px;
-        margin: 5px;
-    }
 
 
     /* ***** main music&video ***** */
-    .title_musicAndVideo {
-        font-size: large;
-    }
-
-    .carousel {
-        margin: 10px;
-    }
-
-    .container .notCarousel {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-
-    .notCarousel {
-        margin: 30px;
-    }
-
     .musicAndVideo__spotify {
-        width: 70%;
+        width: 75%;
     }
 
     .musicAndVideo__spotify iframe {
@@ -84,87 +212,136 @@
     }
 
 
-    /* ***** main bio ***** */
-    .bio {
-        height: 110vh;
+
+    /* ***** main bio ***** */   
+    .bio .container {
+        p {
+            font-size: $fs-p-s;
+        }
+
+        img {
+            height: 350px;
+        }
     }
 
-    .title_bio {
-        font-size: 2.2rem;
+
+    /* ***** icon-nav merch ***** */   
+    .icon-nav {
+        .bi-person-circle {
+            font-size: $fs-icons-s;
+        }
+    
+        .bi-cart3 {
+            font-size: $fs-icons-s;
+        }
+    
+        .bi-heart-fill {
+            font-size: $fs-icons-s;
+        }
     }
 
-    .container {
-        justify-content: center;
+
+    /* ***** main contact ***** */   
+    .contact {
+        .container label {
+            font-size: $fs-label-s;
+        }
     }
 
-    .container p {
-        font-size: 0.75rem;
-        letter-spacing: 1.1px;
-        padding: 7px;
-        margin: 15px;
+
+    /* ***** main tour ***** */   
+    .parallax-caption h1 {
+        font-family: $font-h3;
+        font-size: $fs-title-m;
     }
 
-    .container img {
-        padding: 20px;
-        height: 420px;
-        width: auto;
+    .tour__content {
+        .parallax {
+            height: 23rem;
+        }
+
+        thead {
+            font-size: $fs-p-m;
+        }
+
+        tbody {
+            font-size: $fs-p-s;
+        }
+    }
+
+    .tour__nav a {
+        font-size: $fs-navbar-s;
+        transition: $transition;
+
+        &:hover {
+            color: $secondary;
+        }
     }
 }
 
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 524px) and (max-width: 767px) {
 
     /* ***** header ***** */
-    .navbar {
-        font-size: large;
+    .navbar-nav {
+        font-size: $fs-navbar-m;
+    }
+
+    .nav-link {
+        margin: 5px 0px 5px 25px;
+        padding: 10px;
     }
 
 
+    /* ***** main titles ***** */
+    main h1 {
+        font-size: $fs-title-m;
+    }    
+
     /* ***** main index ***** */
-    .artist__presentation img {
-        margin-bottom: 15px;
+    .artist {
+        height: 50vh;
+
+        .videobg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -2;
+        }
     }
         
 
     /* ***** footer ***** */
-    .footer {
-        font-size: 0.9em;
-    }
-
-    .fa-brands {
-        margin-bottom: 30px;
-    }
-
-    .map__responsive iframe {
-        width: 80%;
-        height: auto;
-        margin-bottom: 25px;
-    }
-
-    .socialBar h5 {
-        font-size: medium;
-        margin-top: -60px;
-    }
-
-    .map h5 {
-        font-size: medium;
-    }
-
-    .copyright h6 {
-        font-size: small;
-    }
-
-    .bi-arrow-up-circle {
-        padding: 10px;
-        margin: 5px;
+    footer {
+        .fa-brands {
+            font-size: $fs-icons-m;
+            margin-bottom: 30px;
+        }
+    
+        .map__responsive iframe {
+            width: 70%;
+            height: auto;
+            margin-bottom: 25px;
+        }
+    
+        .socialBar h5 {
+            font-size: $fs-footer-l;
+        }
+    
+        .map h5 {
+            font-size: $fs-footer-l;
+        }
+    
+        .copyright h6 {
+            font-size: $fs-footer-m;
+        }
     }
 
 
     /* ***** main music&video ***** */
-    .musicAndVideo__titulo {
-        font-size: xx-large;
-    }
-
     .carousel {
         margin: 10px;
     }
@@ -188,84 +365,234 @@
     }
 
 
-    /* ***** main bio ***** */
-    .bio {
-        height: 140vh;
+    /* ***** main bio ***** */   
+    .bio .container {
+        p {
+            font-size: $fs-p-m;
+        }
+
+        img {
+            height: 370px;
+        }
     }
 
-    .title_bio {
-        font-size: 2.8rem;
+
+    /* ***** icon-nav merch ***** */   
+    .icon-nav {
+        .bi-person-circle {
+            font-size: $fs-icons-s;
+        }
+    
+        .bi-cart3 {
+            font-size: $fs-icons-s;
+        }
+    
+        .bi-heart-fill {
+            font-size: $fs-icons-s;
+        }
     }
 
-    .container p {
-        font-size: 0.9rem;
-        letter-spacing: 1.5px;
-        padding: 10px;
-        margin: 15px;
+
+    /* ***** main contact ***** */   
+    .contact {
+        .container label {
+            font-size: $fs-label-m;
+        }
+    }
+
+
+    /* ***** main tour ***** */   
+    .parallax-caption h1 {
+        font-family: $font-h3;
+        font-size: $fs-title-m;
+    }
+
+    .tour__content {
+        .parallax {
+            height: 23rem;
+        }
+
+        thead {
+            font-size: $fs-p-l;
+        }
+
+        tbody {
+            font-size: $fs-p-m;
+        }
+    }
+
+    .tour__nav a {
+        font-size: $fs-navbar-m;
+        transition: $transition;
+
+        &:hover {
+            color: $secondary;
+        }
     }
 }
 
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
 
     /* ***** header ***** */
-    .navbar {
-        font-size: larger;
+    .navbar-nav {
+        font-size: $fs-navbar-m;
     }
 
+    .nav-link {
+        margin: 5px 0px 5px 25px;
+        padding: 10px;
+    }
 
     /* ***** footer ***** */
-    .footer {
-        font-size: 1em;
-    }
-
     .map__responsive iframe {
         width: 90%;
         margin-bottom: 15px;
     }
 
     .socialBar h5 {
-        font-size: large;
-        margin-top: -70px;
+        font-size: $fs-footer-xl;
     }
 
     .map h5 {
-        font-size: large;
-        margin-top: -70px;
+        font-size: $fs-footer-xl;
     }
 
     .copyright h6 {
-        font-size: medium;
+        font-size: $fs-footer-l;
     }
 
-    .bi-arrow-up-circle {
-        padding: 20px;
-        margin: 5px;
+
+    /* ***** main index ***** */
+    .artist {
+        height: 50vh;
+
+        .videobg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -2;
+        }
     }
 
 
     /* ***** main music&video ***** */
-    .carousel {
-        margin: 20px;
-    }
-
-    .musicAndVideo__spotify iframe {
-        margin-bottom: 30px;
+    .musicAndVideo .carousel-caption {
+        h5 {
+            font-size: $fs-h5-m;
+            font-weight: bold;
+        }
+        p {
+            font-size: $fs-p-m;
+        }
     }
 
     
-    /* ***** main bio ***** */
-    .bio {
-        height: 100vh;
+    /* ***** main bio ***** */   
+    .bio .container {
+        p {
+            font-size: $fs-p-m;
+        }
+
+        img {
+            height: 370px;
+        }
     }
 
-    .container img {
-        height: 485px;
-        width: auto;
+
+    /* ***** icon-nav merch ***** */   
+    .icon-nav {
+        .bi-person-circle {
+            font-size: $fs-icons-m;
+        }
+    
+        .bi-cart3 {
+            font-size: $fs-icons-m;
+        }
+    
+        .bi-heart-fill {
+            font-size: $fs-icons-m;
+        }
     }
 
-    .container p {
-        font-size: 0.9em;
-        letter-spacing: 1.5px;
+
+    /* ***** main contact ***** */   
+    .contact {
+        .container label {
+            font-size: $fs-label-m;
+        }
+    }
+
+
+
+    /* ***** main tour ***** */   
+    .parallax-caption h1 {
+         font-family: $font-h3;
+        font-size: $fs-title-m;
+    }
+
+    .tour__nav a {
+        font-size: $fs-navbar-m;
+        transition: $transition;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
+@media (min-width: 991px) and (max-width: 3000px) {
+    /* ***** main index ***** */
+    .artist {
+        min-height: 55vh;
+
+        footer {
+            position: sticky;
+            top: 100%;
+        }
+
+        .videobg {
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+
+    /* ***** main contact ***** */   
+    .contact {
+        .container label {
+            font-size: $fs-label-m;
+        }
+    }
+
+
+    /* ***** main music&video ***** */
+    .musicAndVideo .carousel-caption {
+        h5 {
+            font-size: $fs-h5-l;
+        }
+        p {
+            font-size: $fs-p-m;
+        }
+    }
+
+
+    /* ***** main tour ***** */   
+    .parallax-caption h1 {
+         font-family: $font-h3;
+        font-size: $fs-title-l;
+    }
+
+    .tour__nav a {
+        font-size: $fs-navbar-m;
+        transition: $transition;
+
+        &:hover {
+            color: $secondary;
+        }
     }
 }

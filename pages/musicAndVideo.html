@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official blog and shop of the artist, dj and music producer YMOTO">
-    <meta name="keywords" content="YMOTO, DJ, artist, music, music producer, blog, shop">
+    <meta name="description" content="Official web page and shop of the artist, dj and music producer YMOTO">
+    <meta name="keywords" content="YMOTO, DJ, artist, music, music producer, web page, shop">
     <title>Music&video</title>
-    <link rel="icon" href="./img/logowhitespeed.jpg">
-    <!-- Bootstrap CSS v5.1 -->
+    <link rel="icon" href="../img/logowhitespeed.jpg">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <!-- CSS -->    
+    <!-- CSS personalizado -->    
     <link rel="stylesheet" href="../css/main.css">
     <!-- FontAwesome -->  
     <script src="https://kit.fontawesome.com/68ce035e8a.js" crossorigin="anonymous"></script>
@@ -58,7 +58,26 @@
     <main class="musicAndVideo">
         <h1 class="title_musicAndVideo">MUSIC&VIDEO</h1>
         <div class="container">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <div class="d-flex d-sm-none flex-column justify-content-center align-items-center">
+                <div class="row">
+                    <a href="http://soundcloud.com/ymoto-13082002/reveal-my-heart-feat-artificial-monkey?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                        <img src="../img/revealmyheart.jpg" class="img-fluid" alt="Revealmyheart">
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="http://soundcloud.com/ymoto-13082002/ithurts?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                        <img src="../img/ithurts.jpg" class="img-fluid" alt="Ithurts">
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="http://soundcloud.com/ymoto-13082002/meraki-memories-feat-natalia-taira?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                        <img src="../img/meraki.jpg" class="img-fluid" alt="Meraki">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Carousel-->
+            <div id="carouselExampleCaptions" class="carousel slide d-none d-sm-flex" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -71,7 +90,7 @@
                         </a>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Reveal my heart</h5>
-                            <p>Some representative placeholder content for the first slide lo.</p>
+                            <p class="text-center">Some representative placeholder content for the first slide lo.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -80,7 +99,7 @@
                         </a>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>It hurts</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <p class="text-center">Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -89,7 +108,7 @@
                         </a>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Meraki</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <p class="text-center">Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +124,7 @@
         </div>
 
         <div class="container">
-            <div class="row  notCarousel">
+            <div class="row notCarousel justify-content-center align-items-center">
                 <div class="musicAndVideo__spotify col-sm-12 col-md-6">
                     <iframe style="border-radius:10px" src="https://open.spotify.com/embed/artist/5NhygjqWiBbL6owuuVRwbg?utm_source=generator" width="90%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
@@ -119,15 +138,8 @@
 
 
     <!-- footer --> 
-    <footer class="footer col-sm-12" style="background-color: #1e1e20ff;">
+    <footer class="col-sm-12" style="background-color: #1e1e20ff;">
         <div class="container">
-            <!-- Arrow up -->
-            <div class="d-flex flex-row-reverse">
-                <div class="btnHaciaArriba col-sm-12 col-md-2">
-                    <a href="#"><i class="bi bi-arrow-up-circle" style=" color: #f0f0f0"></i></a>
-                </div>
-            </div>
-
             <div class="row">
                 <!-- Social bar -->
                 <div class="socialBar col-sm-12 col-md-5">
