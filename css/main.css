@@ -592,7 +592,7 @@ template {
 @media (min-width: 991px) and (max-width: 4000px) {
   /* ***** main index ***** */
   .artist {
-    min-height: 100vh; }
+    min-height: 80vh; }
     .artist .videobg {
       width: 100vw;
       height: 100vh;
@@ -605,12 +605,12 @@ template {
     top: 100%; }
   /* ***** main contact ***** */
   .contact {
-    min-height: 100vh; }
+    min-height: 80vh; }
     .contact .container label {
       font-size: 1.5625rem; }
   /* ***** main music&video ***** */
   .musicAndVideo {
-    min-height: 100vh; }
+    min-height: 80vh; }
     .musicAndVideo .carousel-caption {
       min-height: 100vh; }
       .musicAndVideo .carousel-caption h5 {

@@ -547,7 +547,7 @@
 @media (min-width: 991px) and (max-width: 4000px) {
     /* ***** main index ***** */
     .artist {
-        min-height: 100vh;
+        min-height: 80vh;
 
         .videobg {
             width: 100vw;
@@ -567,7 +567,7 @@
 
     /* ***** main contact ***** */   
     .contact {
-        min-height: 100vh;
+        min-height: 80vh;
 
         .container label {
             font-size: $fs-label-m;
@@ -577,7 +577,7 @@
 
     /* ***** main music&video ***** */
     .musicAndVideo {
-        min-height: 100vh;
+        min-height: 80vh;
 
         .carousel-caption {
             min-height: 100vh;
