@@ -589,25 +589,34 @@ template {
     .tour__nav a:hover {
       color: #800040; } }
 
-@media (min-width: 991px) and (max-width: 3000px) {
+@media (min-width: 991px) and (max-width: 4000px) {
   /* ***** main index ***** */
   .artist {
-    min-height: 55vh; }
-    .artist footer {
-      position: sticky;
-      top: 100%; }
+    min-height: 100vh; }
     .artist .videobg {
-      width: 100%;
+      width: 100vw;
+      height: 100vh;
       background-size: cover;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      object-fit: cover; }
+  /* ***** footer ***** */
+  footer {
+    position: sticky;
+    top: 100%; }
   /* ***** main contact ***** */
-  .contact .container label {
-    font-size: 1.5625rem; }
+  .contact {
+    min-height: 100vh; }
+    .contact .container label {
+      font-size: 1.5625rem; }
   /* ***** main music&video ***** */
-  .musicAndVideo .carousel-caption h5 {
-    font-size: 1.5625rem; }
-  .musicAndVideo .carousel-caption p {
-    font-size: 0.875rem; }
+  .musicAndVideo {
+    min-height: 100vh; }
+    .musicAndVideo .carousel-caption {
+      min-height: 100vh; }
+      .musicAndVideo .carousel-caption h5 {
+        font-size: 1.5625rem; }
+      .musicAndVideo .carousel-caption p {
+        font-size: 0.875rem; }
   /* ***** main tour ***** */
   .parallax-caption h1, .parallax-caption .title_bio, .parallax-caption .title_merch, .parallax-caption .title_contact {
     font-family: "Poiret One", cursive;
@@ -616,7 +625,10 @@ template {
     font-size: 1.1875rem;
     transition: all 0.4s ease-in-out; }
     .tour__nav a:hover {
-      color: #800040; } }
+      color: #800040; }
+  /* ***** main bio ***** */
+  .bio {
+    min-height: 100vh; } }
 
 @keyframes movimiento {
   0% {
@@ -800,7 +812,7 @@ main .container table {
   margin: 50px 0px 100px 0px; }
 
 .bio {
-  background-image: url(../img/blackandred.jpg);
+  background-image: url(../img/blackandredopt.jpg);
   width: 100%;
   background-position: center top;
   display: inline-block;
@@ -830,7 +842,7 @@ main .container table {
   color: #000; }
 
 .contact {
-  background-image: url(../img/contactus.jpg);
+  background-image: url(../img/contactusopt.jpg);
   width: 100%;
   height: auto;
   background-position: center top;

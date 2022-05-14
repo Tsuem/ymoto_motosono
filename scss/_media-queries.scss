@@ -544,26 +544,31 @@
     }
 }
 
-@media (min-width: 991px) and (max-width: 3000px) {
+@media (min-width: 991px) and (max-width: 4000px) {
     /* ***** main index ***** */
     .artist {
-        min-height: 55vh;
-
-        footer {
-            position: sticky;
-            top: 100%;
-        }
+        min-height: 100vh;
 
         .videobg {
-            width: 100%;
+            width: 100vw;
+            height: 100vh;
             background-size: cover;
             background-repeat: no-repeat;
+            object-fit: cover;
         }
+    }
+
+    /* ***** footer ***** */
+    footer {
+        position: sticky;
+        top: 100%;
     }
 
 
     /* ***** main contact ***** */   
     .contact {
+        min-height: 100vh;
+
         .container label {
             font-size: $fs-label-m;
         }
@@ -571,14 +576,22 @@
 
 
     /* ***** main music&video ***** */
-    .musicAndVideo .carousel-caption {
-        h5 {
-            font-size: $fs-h5-l;
-        }
-        p {
-            font-size: $fs-p-m;
+    .musicAndVideo {
+        min-height: 100vh;
+
+        .carousel-caption {
+            min-height: 100vh;
+    
+            h5 {
+                font-size: $fs-h5-l;
+            }
+            p {
+                font-size: $fs-p-m;
+            }
         }
     }
+    
+    
 
 
     /* ***** main tour ***** */   
@@ -594,5 +607,11 @@
         &:hover {
             color: $secondary;
         }
+    }
+
+
+    /* ***** main bio ***** */
+    .bio {
+        min-height: 100vh;
     }
 }
